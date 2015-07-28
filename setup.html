@@ -1,46 +1,145 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
+<head>
 
-	<head>
-		<title>Amanda Shi</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" href="favicon.ico?v=2" type="image/x-icon" />
-	</head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	<body class="loading">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
-						
-				<!-- Header -->
-					<header id="header">
-					<h1>Creating Your Own Website</h1>
+    <title>Amanda Shi</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="assets/css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <link rel="icon" href="favicon.ico?v=2" type="image/x-icon" />
+
+</head>
+
+<body>
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('assets/css/images/setup/setup-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Creating Your Own Website</h1>
                         <h2 class="subheading">A concise and easy-to-follow beginner's guide on using GitHub to set up a website</h2>
                         <span class="meta">July, 2015</span>
-						<p>projects to come</p>
-						<nav>
-							<ul>
-								<li><a href="index.html" class="icon fa-angle-double-left"><span class="label">Back</span></a></li>
-							</ul>
-						</nav>
-					</header>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">&copy; Amanda Shi 2015</a>.</span>
-					</footer>
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-			</div>
-		</div>
-		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-		<!--<script>
-			window.onload = function() { document.body.className = ''; }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>-->
-	</body>
+                    <p>GitHub provides one free site per user. You can create a personal blog, site for your organization, basically anything, and here’s how:</p>
+
+                    <h2 class="section-heading">Before You Start</h2>
+                    <p> </p>
+
+                    <ol type="1">
+                        <li>Install <u><a href="https://confluence.atlassian.com/display/BITBUCKET/Set+up+Git" target="_blank">Git</a></u> if it's not on your computer already.</li>
+                        <li>Make a <u><a href="https://github.com/join" target="_blank">GitHub</a></u> account.</li>
+                        <li>Be somewhat familiar with Terminal (Command Prompt on Windows) aka know  “cd.”</li>
+                        <li>Have a text editor ready. I recommend <u><a href="http://www.sublimetext.com/2" target="_blank">Sublime</a></u>.</li>
+                    </ol>
+
+                    <h2 class="section-heading">Actually Setting Up Your Site</h2>
+                    <p> </p>
+
+                    <ol type="1">
+                        <li>Create a new <u><a href="https://github.com/new" target="_blank">repository</a></u> named <i>username</i>.github.io, where <i>username</i> is your username on GitHub.</li>
+                        <a href="assets/css/images/setup/repository-bg.jpg" target="_blank">
+                        <img class="img-responsive" src="assets/css/images/setup/repository-bg.jpg" alt="">
+                        </a>
+                        <span class="caption">     </span>
+                        <li>Open Terminal and cd into the folder you want your local directory to be. Desktop should be fine for now (you can always move it somewhere else later).</li>
+                        <pre> Amandas-MacBook:~ ashi$ cd Desktop </pre>
+                        <span class="caption">     </span>
+                        <li>Clone your repository. This will create a new folder on your desktop.</li>
+                        <pre>Amandas-MacBook:Desktop ashi$ git clone https://github.com/<em>username</em>/<em>username</em>.github.io</pre>
+                        <span class="caption">    </span>
+                        <li>Enter your new folder and add an index.html file. You’re creating a new .html file in your folder with its contents controlling what displays on your site. You’ll be able to replace this later with hopefully something slightly more interesting.</li>
+                        <pre> Amandas-MacBook:~ ashi$ cd <em>username</em>.github.io
+ Amandas-MacBook:~ ashi$ echo "Hello World!" > index.html</pre>
+                        <span class="caption">    </span>
+                        <li>Add, commit, and push your changes (the “Hello World!” text in our case). These git commands translate the changes you’ve made locally (in your username.github.io folder) onto your site.</li>
+                        <pre> Amandas-MacBook:~ ashi$ git add .
+ Amandas-MacBook:~ ashi$ git commit -m "Initial "Hello World" commit"
+ Amandas-MacBook:~ ashi$ git push origin master</pre>
+                        <span class="caption">     </span>
+                        <li> Your site is all set up! Go to http://<em>username</em>.github.io to view it!</li>
+                    </ol>
+
+                    <h2 class="section-heading">Making Your Site Look Nice</h2>
+                    <p> </p>
+                    <ol type="1">
+                        <li>Find a <u><a href="http://startbootstrap.com/template-categories/all/" target="_blank">theme</a></u> you like, download it, unpack it, and drag its <b>contents</b> into your <em>username</em>.github.io folder.
+                        <a href="assets/css/images/setup/folder-bg.jpg" target="blank">
+                        <img class="img-responsive" src="assets/css/images/setup/folder-bg.jpg" alt="">
+                        </a>
+                        <span class="caption">     </span>
+                        <li>Play around with the .html and .css files. You don’t have to be an expert on HTML/CSS to do this. <u><a href="http://www.w3schools.com/html/default.asp" target="_blank">Here</a></u>’s a great resource. Remember to add, commit, and push any changes you make in your folder.</li>
+                        <span class="caption">    </span>
+                        <li>If you want to make a change to a certain text/picture/etc but you’re not sure where or in which .html or .css file you need to be making the change in, highlight the item, right click, and select <b>Inspect Element</b>. You will now be able to see the possible changes you can make to the item and in which .html and .css files.
+                        <a href="assets/css/images/setup/inspectelement-bg.jpg" target="_blank">
+                        <img class="img-responsive" src="assets/css/images/setup/inspectelement-bg.jpg" alt="">
+                        </a>
+                    </ol>
+
+                    <h2 class="section-heading">Other Helpful Things</h2>  
+                    <p> </p>
+                    <ul style="list-style-type:circle">
+                        <li><b>Preview your changes locally.</b> Open .html files with your browser. Then by saving changes you make locally and refreshing your browser, you can preview what the generated site will look like in your browser locally.</li>
+                        <span class="caption">    </span>
+                        <li><b>Add a favicon.</b> Download or design an image, run it through a <u><a href="http://www.favicon-generator.org/" target="_blank">converter</a></u>, drag the converted image (saved as favicon.ico) into your <em>username</em>.github.io folder, and copy this text into the head section of your .html files:</li>
+                        <pre> &lt;link rel="icon" href="favicon.ico?v=2" type="image/x-icon" /&gt; </pre>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                    <p class="copyright text-muted">&copy; Amanda Shi 2015</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
 </html>
