@@ -1,7 +1,3 @@
-@import 'libs/vars';
-@import 'libs/functions';
-@import 'libs/mixins';
-
 /*
 	Big Picture by HTML5 UP
 	html5up.net | @n33co
@@ -10,11 +6,8 @@
 
 /* Loader */
 
-	body {
-		&:before,
-		&:after {
-			display: none !important;
-		}
+	body:before, body:after {
+		display: none !important;
 	}
 
 /* Poptrox */
