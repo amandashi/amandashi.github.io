@@ -42,17 +42,6 @@
 		font-size: 80%;
 	}
 
-	#thumbnails{
-		width: 100%;
-		height: 90%;
-		overflow: hidden;
-	}
-
-	#thumbnail{
-		width: 103%;
-		overflow: hidden;
-	}
-
 	.descriptions{
 		font-family: 'Amiri', serif;
 		font-style: italic;
