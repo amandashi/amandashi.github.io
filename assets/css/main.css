@@ -1,13 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Amiri:400italic|Raleway:300);
 @import url("font-awesome.min.css");
 
-/*
-	Identity by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-/* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
@@ -84,10 +77,10 @@
 			opacity: 0;
 			z-index: 1;
 			background-color: #ffffff;
-			background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(57,62,65, 0.5) 5%, rgba(57,62,65, 0.5));
-			background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(57,62,65, 0.5) 5%, rgba(57,62,65, 0.5));
-			background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(57,62,65, 0.5) 5%, rgba(57,62,65, 0.5));
-			background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(57,62,65, 0.5) 5%, rgba(57,62,65, 0.5));
+			background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(224,130,131, 0.5) 5%, rgba(244,244,244, 0.2));
+			background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(224,130,131, 0.5) 5%, rgba(244,244,244, 0.2));
+			background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(224,130,131, 0.5) 5%, rgba(244,244,244, 0.2));
+			background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(224,130,131, 0.5) 5%, rgba(244,244,244, 0.2));
 			background-repeat: repeat,			no-repeat;
 			background-size: 100px 100px, cover;
 			background-position: top left,		center center;
